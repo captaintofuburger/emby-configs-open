@@ -1,0 +1,5 @@
+[emby]
+enabled = true
+filter = emby
+logpath = /var/lib/emby/logs/embyserver.txt
+port = 80,443

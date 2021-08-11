@@ -1,0 +1,9 @@
+[sshd]
+enabled = true
+bantime = 86400
+[webmin-auth]
+enabled = true
+bantime = 86400
+[emby]
+enabled = true
+bantime = 86400
