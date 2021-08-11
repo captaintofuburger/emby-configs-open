@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo update and upgrade....
-sudo apt update && sudo apt upgrade
+sudo apt update && sudo apt upgrade && apt-get install unzip
 echo Fetching Emby Server....
 wget https://github.com/MediaBrowser/Emby.Releases/releases/download/4.6.4.0/emby-server-deb_4.6.4.0_amd64.deb
 echo Installing Emby Server....
@@ -18,7 +18,6 @@ echo Installing Fail2Ban.....
 sudo apt install fail2ban
 
 echo Fetching Configs....
-echo .
 cd /tmp
 wget https://github.com/captaintofuburger/emby-configs-open/archive/refs/heads/main.zip
 unzip main.zip -d /tmp
